@@ -1,0 +1,25 @@
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Cache Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Program Vina versi Windows - jangan diunggah,
+# di server Linux dipasang lewat pip (lihat requirements.txt)
+vina.exe
+vina_split.exe
+*.exe
+
+# Berkas hasil docking sementara
+*.pdbqt
+*.dcd
+drugflow_*/
+
+# Sistem
+.DS_Store
+Thumbs.db
+.vscode/

@@ -1,0 +1,14 @@
+# --- Wajib ---
+streamlit>=1.32
+requests>=2.31
+pandas>=2.0
+matplotlib>=3.7
+rdkit>=2023.9.1
+
+# --- Untuk docking ---
+meeko>=0.5
+
+# AutoDock Vina. Penanda di bawah artinya: pasang hanya kalau BUKAN Windows.
+# Di laptop Windows, Vina tetap memakai vina.exe seperti biasa.
+# Di server Linux (Streamlit Cloud), Vina terpasang otomatis lewat pip.
+vina>=1.2.5; sys_platform != "win32"
