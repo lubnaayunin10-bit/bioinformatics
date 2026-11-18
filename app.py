@@ -24,6 +24,13 @@ st.caption(
     "Alur penemuan obat berbasis fisika komputasi — dari ID protein dan senyawa "
     "sampai skor docking, dalam satu klik."
 )
+st.markdown(
+    "<div style='display:inline-block;padding:6px 14px;border-radius:999px;"
+    "background:#1e293b;border:1px solid #334155;color:#94a3b8;"
+    "font-size:0.85rem;margin-bottom:8px;'>"
+    "Kelompok 1 · Biologi Umum · FSK C</div>",
+    unsafe_allow_html=True,
+)
 
 if "hasil" not in st.session_state:
     st.session_state.hasil = None
@@ -32,6 +39,7 @@ if "hasil" not in st.session_state:
 # Panel samping
 # --------------------------------------------------------------------------
 with st.sidebar:
+    st.caption("Kelompok 1 · Biologi Umum · FSK C")
     st.header("Masukan")
 
     pdb_id = st.text_input("PDB ID protein", value="6LU7",
