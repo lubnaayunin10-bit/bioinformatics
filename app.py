@@ -21,8 +21,7 @@ st.set_page_config(page_title="DrugFlow", page_icon="🧬", layout="wide")
 # --------------------------------------------------------------------------
 st.title("DrugFlow")
 st.caption(
-    "Alur penemuan obat berbasis fisika komputasi — dari ID protein dan senyawa "
-    "sampai skor docking, dalam satu klik."
+    "Alur penemuan obat berbasis fisika komputasi"
 )
 st.markdown(
     "<div style='display:inline-block;padding:6px 14px;border-radius:999px;"
