@@ -19,7 +19,7 @@ st.set_page_config(page_title="DrugFlow", page_icon="🧬", layout="wide")
 # --------------------------------------------------------------------------
 # Tampilan atas
 # --------------------------------------------------------------------------
-st.title("🧬 DrugFlow")
+st.title("DrugFlow")
 st.caption(
     "Alur penemuan obat berbasis fisika komputasi — dari ID protein dan senyawa "
     "sampai skor docking, dalam satu klik."
@@ -79,7 +79,7 @@ with st.sidebar:
     if not (perkakas["vina_program"] or perkakas["vina_python"]):
         st.info("Tanpa Vina, tahap 1–3 tetap jalan. Docking saja yang dilewati.")
 
-    jalan = st.button("▶️  Jalankan alur", type="primary", use_container_width=True)
+    jalan = st.button("Run", type="primary", use_container_width=True)
 
 # --------------------------------------------------------------------------
 # Alur utama
@@ -164,7 +164,7 @@ if jalan:
 h = st.session_state.hasil
 if h:
     tab1, tab2, tab3, tab4 = st.tabs(
-        ["📋 Ringkasan", "🧪 Senyawa & Lipinski", "🎯 Hasil docking", "🔬 Tampilan 3D"]
+        ["Ringkasan", "Senyawa & Lipinski", "Hasil docking", "Tampilan 3D"]
     )
 
     # ---- ringkasan ----
@@ -245,3 +245,4 @@ if h:
                    "kotak emas = grid box docking. Seret untuk memutar.")
 else:
     st.info("Isi panel di sebelah kiri, lalu tekan **Jalankan alur**.")
+    
